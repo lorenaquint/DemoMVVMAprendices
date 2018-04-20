@@ -26,6 +26,7 @@ namespace DemoMVVMAprendices
 
             }
             Navigation.PushAsync(new DetalleApreniz(aprendizSeleccionado));
+            lstName.SelectedItem = null;
         }
     }
 }
