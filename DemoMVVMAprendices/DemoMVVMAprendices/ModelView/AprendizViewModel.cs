@@ -62,7 +62,9 @@ namespace DemoMVVMAprendices.ModelView
             {
                 IsEnabled = true;
                 await Task.Delay(3000);
-                Aprendices = CargarAprendiz();
+				Data listAprendices = CaracterizacionAprendices.CargarAprendices();
+				Aprendices = listAprendices.Aprendices;
+                //Aprendices = CargarAprendiz();
                 IsEnabled = false;
 
             }
